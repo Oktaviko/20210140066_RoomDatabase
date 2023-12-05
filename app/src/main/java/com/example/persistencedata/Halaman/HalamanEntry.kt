@@ -15,8 +15,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.persistencedata.R
 import com.example.persistencedata.data.Siswa
+import com.example.persistencedata.model.DetailSiswa
 import com.example.persistencedata.model.EntryViewModel
 import com.example.persistencedata.model.PenyediaViewModel
+import com.example.persistencedata.model.UIStateSiswa
 import com.example.persistencedata.navigasi.DestinasiNavigasi
 import kotlinx.coroutines.launch
 
@@ -60,4 +62,13 @@ fun EntrySiswaScreen(
         )
 
     }
+}
+
+@Composable
+fun EntrySiswaBody(
+    uiStateSiswa: UIStateSiswa,
+    onSiswaValueChange: (DetailSiswa) -> Unit,
+    onSaveClick: () -> Unit,
+    modifier: Modifier = Modifier) {
+
 }
