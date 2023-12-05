@@ -37,6 +37,7 @@ import com.example.persistencedata.data.Siswa
 import com.example.persistencedata.model.HomeViewModel
 import com.example.persistencedata.model.PenyediaViewModel
 import com.example.persistencedata.navigasi.DestinasiNavigasi
+import com.example.persistencedata.navigasi.SiswaTopAppBar
 
 object DestinasiHome : DestinasiNavigasi {
     override val route = "home"
@@ -114,14 +115,15 @@ fun ListSiswa(
     itemSiswa: List<Siswa>,
     modifier: Modifier = Modifier)
 {
-    LazyColumn(modifier = Modifier){
-        items(items = itemSiswa, key = {it.id}){
+    LazyColumn(
+        modifier = Modifier
+    ){
+        items(
+            items = itemSiswa, key = {it.id}){
                 person ->
-            DataSiswa(
-                siswa = person,
+            DataSiswa(siswa = person,
                 modifier = Modifier
-                    .padding(dimensionResource(id = R.dimen.padding_small))
-            )
+                    .padding(dimensionResource(id = R.dimen.padding_small)))
         }
     }
 }

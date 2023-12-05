@@ -30,6 +30,7 @@ import com.example.persistencedata.model.EntryViewModel
 import com.example.persistencedata.model.PenyediaViewModel
 import com.example.persistencedata.model.UIStateSiswa
 import com.example.persistencedata.navigasi.DestinasiNavigasi
+import com.example.persistencedata.navigasi.SiswaTopAppBar
 import kotlinx.coroutines.launch
 
 object DestinasiEntry: DestinasiNavigasi {
