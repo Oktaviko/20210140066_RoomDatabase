@@ -103,7 +103,11 @@ fun EntrySiswaBody(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun FormInputSiswa(detailSiswa: DetailSiswa, onValueChange: (DetailSiswa) -> Unit = {}, modifier: Modifier = Modifier, enabled: Boolean = true) {
+fun FormInputSiswa(
+    detailSiswa: DetailSiswa,
+    onValueChange: (DetailSiswa) -> Unit = {},
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true) {
     Column(
         modifier = modifier,
         verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_medium))
